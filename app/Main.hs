@@ -3,4 +3,6 @@ import Data.List
 import Lib
 
 main :: IO ()
-main = someFunc
+main = do
+    url <- getLine
+    loadSiteByURL url
